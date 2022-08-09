@@ -1,0 +1,35 @@
+@import "componentes/resetear";
+@import "componentes/variables";
+@import "componentes/menu";
+@import "componentes/banner";
+@import "componentes/intro";
+@import "componentes/gratis";
+@import "componentes/tarjetas";
+@import "componentes/footer";
+@import "componentes/blogs";
+@import "componentes/contactos";
+@import "componentes/nosotros";
+@import "componentes/transmitir";
+@import "componentes/programas";
+@import "componentes/sesiones";
+@import "componentes/mediasQ";
+
+
+.btn__principal{
+    background-color:$color1;
+    border: 2px solid $color1;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+.resaltar{
+    color:  $color4;
+}
+
+.sombras{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

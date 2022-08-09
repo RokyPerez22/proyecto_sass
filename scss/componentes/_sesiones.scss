@@ -1,0 +1,58 @@
+#sesiones {
+    .contenedor {
+        .grilla {
+            display: grid;
+            grid-template-columns: auto;
+            grid-row: auto;
+            grid-template-areas: "f1 "
+                "f2"
+                "f3"
+                "f4"
+                "f5"
+                "f6"
+                "f7";
+            gap: 10px;
+
+            .galeria_foto {
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+
+                &::before {
+                    content: "ver";
+                    position: absolute;
+                    top: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    background-color: #f34099a6;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translate(100%);
+                    transition: transform .4s;
+                }
+
+                &:hover::before {
+                    transform: translate(0);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+
+}

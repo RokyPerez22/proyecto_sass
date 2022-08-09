@@ -1,0 +1,50 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.navegar {
+    background-color: rgba(243, 242, 242, 0.151);
+    padding: 0 15PX;
+
+    a {
+        color: rgba(73, 72, 72, 0.829);
+        text-decoration: none;
+    }
+
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 20px;
+        padding: 7.5px 10px 7.5px 0;
+        width: 200px;
+    }
+
+    &__item {
+        /* padding: 10px ; Mostrar menu con Java Scrip */
+        width: 100%;
+        text-align: center;
+        display: none; 
+
+        a {
+            display: inline-block;
+            padding: 15px 5px;
+        }
+
+        a:hover {
+            color: $color1;
+        }
+    }
+
+    &__btn {
+        padding: 9px 5px;
+        font-size: 25px;
+        
+    }
+
+
+}

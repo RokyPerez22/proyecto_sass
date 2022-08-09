@@ -1,0 +1,28 @@
+.tarjetas {
+    width: 90%;
+    margin: 50px auto;
+    background-color: $color3;
+
+    &__titulo {
+        padding: 20px;
+    }
+
+    &__fila {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    &__tarjeta {
+        margin: 20px;
+        padding: 20px;
+        background-color:white;
+        }
+
+    &__imagen {
+        text-align: center;
+    }
+    h2{
+        margin: 20px 0px;
+    }
+}

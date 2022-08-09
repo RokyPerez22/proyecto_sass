@@ -1,0 +1,31 @@
+#programas {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        padding: 10px;
+
+        .programas_datos {
+            margin-bottom: 20px;
+        }
+
+        .contenedor_cars {
+            display: grid;
+            grid-row: 2;
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            .cards {
+
+                /* margin-top: 20px;*/
+                padding: 10px;
+
+                img {
+                    height: 30vh;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
