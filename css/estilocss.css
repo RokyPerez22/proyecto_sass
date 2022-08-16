@@ -25,9 +25,12 @@ body {
     justify-content: space-between;
     align-items: center; }
   .navegar__logo {
-    font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
-    width: 200px; }
+    width: 150px;
+    height: 50px; }
+    .navegar__logo img {
+      width: 100%;
+      height: 100%; }
   .navegar__item {
     /* padding: 10px ; Mostrar menu con Java Scrip */
     width: 100%;
@@ -50,7 +53,7 @@ body {
   flex-direction: column;
   height: 90vh;
   color: white;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/terapia.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/terapia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -125,15 +128,18 @@ body {
   .blogs__contenedor {
     display: flex;
     flex-direction: column;
-    gap: 10px; }
+    gap: 20px; }
   .blogs__imagen {
-    width: 100%; }
+    width: 100%;
+    border-radius: 10px; }
   .blogs__titulos {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     gap: 10px; }
+  .blogs__blog {
+    padding: 10px; }
 
 .aside {
   display: flex;
@@ -145,7 +151,8 @@ body {
     margin: 10px; }
   .aside li {
     padding: 5px;
-    border: 1px solid #e4e1e1; }
+    border: 1px solid #e4e1e1;
+    list-style-type: none; }
 
 #contactos .contenedor {
   text-align: center;
@@ -209,36 +216,38 @@ body {
         height: 30vh;
         width: 100%; }
 
-#sesiones .contenedor .grilla {
-  display: grid;
-  grid-template-columns: auto;
-  grid-row: auto;
-  grid-template-areas: "f1 " "f2" "f3" "f4" "f5" "f6" "f7";
-  gap: 10px; }
-  #sesiones .contenedor .grilla .galeria_foto {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden; }
-    #sesiones .contenedor .grilla .galeria_foto::before {
-      content: "ver";
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      background-color: #f34099a6;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: translate(100%);
-      transition: transform .4s; }
-    #sesiones .contenedor .grilla .galeria_foto:hover::before {
-      transform: translate(0); }
-    #sesiones .contenedor .grilla .galeria_foto img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+#sesiones {
+  margin: 50px 0; }
+  #sesiones .contenedor .grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "f1 " "f2" "f3" "f4" "f5" "f6" "f7";
+    gap: 10px; }
+    #sesiones .contenedor .grilla .galeria_foto {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden; }
+      #sesiones .contenedor .grilla .galeria_foto::before {
+        content: "ver";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #f34099a6;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(100%);
+        transition: transform .4s; }
+      #sesiones .contenedor .grilla .galeria_foto:hover::before {
+        transform: translate(0); }
+      #sesiones .contenedor .grilla .galeria_foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 /*Menu para laptop*/
 @media screen and (min-width: 960px) {
@@ -270,7 +279,7 @@ body {
     grid-template-columns: 5fr 1fr;
     flex-direction: column;
     grid-template-areas: "a1" "a2";
-    gap: 10px; }
+    gap: 20px; }
   #contactos .contenedor .cuadros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
@@ -292,14 +301,16 @@ body {
     width: 960px;
     margin: 0 auto; }
     #sesiones .contenedor .grilla {
-      grid-template-columns: auto auto auto;
-      grid-template-areas: "f1 f2 f3" "f4 f2 f3" "f5 f6 f7" "f5 f8 f9" "f10 f12 f13"; }
-      #sesiones .contenedor .grilla .galeria_foto .foto4 {
+      grid-template-columns: auto auto auto auto;
+      grid-template-areas: "f1 f2 f3 f4" "f5 f2 f3 f8" "f5 f10 f11 f12"; }
+      #sesiones .contenedor .grilla .foto4 {
         grid-area: f2; }
-      #sesiones .contenedor .grilla .galeria_foto .foto5 {
+      #sesiones .contenedor .grilla .foto5 {
         grid-area: f3; }
-      #sesiones .contenedor .grilla .galeria_foto .foto7 {
-        grid-area: f5; } }
+      #sesiones .contenedor .grilla .foto7 {
+        grid-area: f5; }
+      #sesiones .contenedor .grilla .foto3 {
+        grid-area: f4; } }
 
 @media screen and (min-width: 1200px) {
   .tarjetas__fila {
