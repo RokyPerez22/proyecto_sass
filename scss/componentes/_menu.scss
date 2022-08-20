@@ -43,6 +43,9 @@
         a:hover {
             color: $color1;
         }
+        .activo {
+            display: block;
+          }
     }
 
     &__btn {

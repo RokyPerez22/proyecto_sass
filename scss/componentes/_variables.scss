@@ -6,3 +6,11 @@ $color4:rgb(13,110,253);
 .activo:hover{
     background-color: $color2;
 }
+
+@mixin texto_titulo ($tamanio) {
+    font-size: $tamanio;
+    color: black;
+    
+    
+}
+

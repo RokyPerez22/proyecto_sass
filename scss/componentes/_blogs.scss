@@ -11,7 +11,7 @@
     &__contenedor{
         display: flex;
         flex-direction:column;
-        gap: 20px;
+        gap: 30px;
     }
     &__imagen{
         width: 100%;
@@ -24,14 +24,23 @@
         align-items: center;
         padding: 10px;
         gap: 10px;
+        i{
+            font-size: 45px;
+            color: $color2;
+        }
     }
     &__blog{
         padding: 10px;
+       
     }
-    
+    .blog__parrafo{
+        line-height: 1.5;
+        margin-top: 10px;
+        }
     
 }
 .aside{
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -40,6 +49,9 @@
         display: flex;
         flex-direction: column;
         margin: 10px;
+        input{
+            height: 30px;
+        }
     }
     li{
         padding: 5px;

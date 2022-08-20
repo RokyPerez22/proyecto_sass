@@ -5,8 +5,15 @@
 
     .transmitir_texto {
         grid-column: 1/9;
+        .transmitir_titulo{
+            padding-bottom: 10px;
+            @include texto_titulo(1.5rem);
+        }
     }
-
+    .transmitir_parrafo{
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
     .transmitir_video {
         grid-column: 1/9;
         margin-top: 20px;

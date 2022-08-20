@@ -51,7 +51,7 @@
          flex-direction: column;
          grid-template-areas: "a1""a2";
          gap: 20px;
-         
+
      }
 
      #contactos {
@@ -105,27 +105,27 @@
                      "f5 f2 f3 f8"
                      "f5 f10 f11 f12";
 
-                     .foto4 {
-                        grid-area: f2;
+                 .foto4 {
+                     grid-area: f2;
 
-                    }
+                 }
 
-                    .foto5 {
-                        grid-area: f3;
+                 .foto5 {
+                     grid-area: f3;
 
-                    }
+                 }
 
-                    .foto7 {
-                        grid-area: f5;
+                 .foto7 {
+                     grid-area: f5;
 
-                    }
+                 }
 
-                    .foto3 {
-                        grid-area: f4;
+                 .foto3 {
+                     grid-area: f4;
 
-                    }
+                 }
 
-                
+
              }
 
 
@@ -138,6 +138,24 @@
          }
      }
 
+     #valores {
+         .contenedor {
+             width: 960px;
+             margin: 20px auto;
+           
+             .cuadros {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+                    
+            }
+         }
+
+     }
+     .aside{
+        padding-top: 0px;
+        
+     }
  }
 
 

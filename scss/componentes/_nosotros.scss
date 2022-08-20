@@ -1,8 +1,45 @@
 .nosotros_contenedor {
     width: 100%;
     margin: 20px auto;
-   
-    padding: 10px;
 
+    padding: 10px;
+    h3{
+       padding-bottom: 15px;
+    }
+    .parrafo{
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
     
+
+}
+.nosotros_titulo{
+    @include texto_titulo(1.5rem);
+}
+
+#valores {
+    .contenedor {
+        background-color: $color3;
+        width: 100%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        padding: 20px;
+        h3{
+            padding-bottom: 15px;
+        }
+        .cuadros {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            /*espacios en los grid*/
+            .caja {
+                background-color: white;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
 }

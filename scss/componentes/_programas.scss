@@ -7,7 +7,17 @@
 
         .programas_datos {
             margin-bottom: 20px;
+           
+            .programas_titulo{
+                @include texto_titulo(1.5rem);
+                padding-bottom: 15px;
+            }
+            
         }
+        .programas_parrafos{
+                line-height: 1.5;
+                padding-top: 10px ;
+            }
 
         .contenedor_cars {
             display: grid;
@@ -23,6 +33,8 @@
                 img {
                     height: 30vh;
                     width: 100%;
+                   object-fit: cover; 
+                   padding-bottom: 10px;
                 }
 
             }

@@ -48,7 +48,10 @@
                 }
             }
         }
-
+        .sesiones_titulo{
+            @include texto_titulo(1.5rem);
+            padding-bottom: 15px;
+        }
 
 
 

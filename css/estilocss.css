@@ -41,6 +41,8 @@ body {
       padding: 15px 5px; }
     .navegar__item a:hover {
       color: #f53884; }
+    .navegar__item .activo {
+      display: block; }
   .navegar__btn {
     padding: 9px 5px;
     font-size: 25px; }
@@ -53,7 +55,7 @@ body {
   flex-direction: column;
   height: 90vh;
   color: white;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/terapia.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/terapia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -108,6 +110,9 @@ body {
     text-align: center; }
   .tarjetas h2 {
     margin: 20px 0px; }
+  .tarjetas__parrafo {
+    line-height: 1.5;
+    margin-bottom: 10px; }
 
 .footers {
   padding: 20px;
@@ -128,7 +133,7 @@ body {
   .blogs__contenedor {
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+    gap: 30px; }
   .blogs__imagen {
     width: 100%;
     border-radius: 10px; }
@@ -138,10 +143,17 @@ body {
     align-items: center;
     padding: 10px;
     gap: 10px; }
+    .blogs__titulos i {
+      font-size: 45px;
+      color: #fd0669; }
   .blogs__blog {
     padding: 10px; }
+  .blogs .blog__parrafo {
+    line-height: 1.5;
+    margin-top: 10px; }
 
 .aside {
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 10px; }
@@ -149,6 +161,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px; }
+    .aside__form input {
+      height: 30px; }
   .aside li {
     padding: 5px;
     border: 1px solid #e4e1e1;
@@ -171,15 +185,48 @@ body {
   max-width: 400px;
   margin: 20px auto;
   text-align: center; }
+  #formularios form input {
+    height: 30px; }
   #formularios form input,
   #formularios form textarea {
     width: 100%;
-    margin: 10px 0; }
+    margin: 10px 0;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px; }
 
 .nosotros_contenedor {
   width: 100%;
   margin: 20px auto;
   padding: 10px; }
+  .nosotros_contenedor h3 {
+    padding-bottom: 15px; }
+  .nosotros_contenedor .parrafo {
+    line-height: 1.5;
+    margin-bottom: 10px; }
+
+.nosotros_titulo {
+  font-size: 1.5rem;
+  color: black; }
+
+#valores .contenedor {
+  background-color: #f8f9fa;
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  padding: 20px; }
+  #valores .contenedor h3 {
+    padding-bottom: 15px; }
+  #valores .contenedor .cuadros {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /*espacios en los grid*/ }
+    #valores .contenedor .cuadros .caja {
+      background-color: white;
+      padding: 10px;
+      text-align: center; }
 
 .transmision_contenedor {
   width: 100%;
@@ -187,6 +234,13 @@ body {
   padding: 10px; }
   .transmision_contenedor .transmitir_texto {
     grid-column: 1/9; }
+    .transmision_contenedor .transmitir_texto .transmitir_titulo {
+      padding-bottom: 10px;
+      font-size: 1.5rem;
+      color: black; }
+  .transmision_contenedor .transmitir_parrafo {
+    line-height: 1.5;
+    margin-bottom: 10px; }
   .transmision_contenedor .transmitir_video {
     grid-column: 1/9;
     margin-top: 20px;
@@ -204,6 +258,13 @@ body {
   padding: 10px; }
   #programas .contenedor .programas_datos {
     margin-bottom: 20px; }
+    #programas .contenedor .programas_datos .programas_titulo {
+      font-size: 1.5rem;
+      color: black;
+      padding-bottom: 15px; }
+  #programas .contenedor .programas_parrafos {
+    line-height: 1.5;
+    padding-top: 10px; }
   #programas .contenedor .contenedor_cars {
     display: grid;
     grid-row: 2;
@@ -214,7 +275,9 @@ body {
       padding: 10px; }
       #programas .contenedor .contenedor_cars .cards img {
         height: 30vh;
-        width: 100%; }
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 10px; }
 
 #sesiones {
   margin: 50px 0; }
@@ -248,6 +311,10 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+  #sesiones .contenedor .sesiones_titulo {
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 15px; }
 
 /*Menu para laptop*/
 @media screen and (min-width: 960px) {
@@ -310,7 +377,15 @@ body {
       #sesiones .contenedor .grilla .foto7 {
         grid-area: f5; }
       #sesiones .contenedor .grilla .foto3 {
-        grid-area: f4; } }
+        grid-area: f4; }
+  #valores .contenedor {
+    width: 960px;
+    margin: 20px auto; }
+    #valores .contenedor .cuadros {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+  .aside {
+    padding-top: 0px; } }
 
 @media screen and (min-width: 1200px) {
   .tarjetas__fila {
